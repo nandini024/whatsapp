@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="WhatsApp Chat Task">
+    <meta property="og:image" content="data:image/jpeg;base64,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">
+    <title>Document</title>
+   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .main {
+        border: 3px solid black;
+        border-radius: 30px;
+        width: 500px;
+        height: 700px;
+        margin: auto;
+        overflow: scroll;
+        scrollbar-width: none;
+        background-image: url(./phone\ nandu.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      header {
+        border: 2px solid black;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom: none;
+        /* position: relative; */
+        position: sticky;
+        top: 0px;
+        width: 500px;
+        background-color: white;
+        color: black;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+      }
+      #p1 {
+        font-size: 30px;
+        width: 30px;
+        margin-right: 10px;
+        height: 50px;
+      }
+      img {
+        border-radius: 100%;
+        margin-right: 20px;
+      }
+      #p2 {
+        font-weight: bold;
+      }
+     
+      #i2 {
+        width: 200px;
+        height: 40px;
+        margin-right: 0;
+        border-radius: 0;
+        border: 2px solid white;
+        margin-left: 100px;
+      }
+
+      .left {
+        width: 20%;
+        background-color: lightgreen;
+        text-align: center;
+        border-radius: 5px;
+        margin-left: 10px;
+        padding: 3px;
+      }
+      .right {
+        width: 20%;
+        margin-left: auto;
+        background-color: lightgreen;
+        text-align: center;
+        border-radius: 5px;
+        margin-right: 40px;
+        padding: 3px;
+      }
+      .sec {
+        width: 100%;
+        /* height: 70vh; */
+        /* position: relative; */
+        /* top: 8px; */
+      }
+      .date {
+        position: sticky;
+        top: 80px;
+        background-color: lightgray;
+        width: 30%;
+        text-align: center;
+        margin-left: 40%;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      footer{
+        background-color: white;
+        padding:10px;
+        position: sticky;
+        bottom: 0;
+      }
+
+      .search-input{
+        padding: 10px;
+        width: 80%;
+        border-radius: 10px;
+        border-style: none;
+      }
+       .x{
+            display: flex;
+            height: 50px;
+            color: black;
+            font-size: 20px;
+            margin-left:10%;
+            margin-right: 3%;
+            padding-top: 5%
+
+      /* footer{
+        width: 500px;
+        border: 2px solid;
+        height: 7vh;
+        background-color:white;
+        position: absolute;
+        bottom: 0px;
+        z-index: 2;
+        border-radius: 25px;
+        
+        
+        
+    } */
+
+    /* .search-bar {
+        width: 500px;
+        height: 5vh;
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        border-radius: 20px;
+
+        } */
+        /* .search-input {
+            height: 5vh;
+            width: 80%;
+            padding-left: 30px;
+            
+            outline: none;
+            border-style: none;
+
+        } */
+      /* footer {
+        position: fixed;
+        border: 2px solid black;
+        bottom: 0;
+        display: flex;
+        height: 60px;
+        width: 100%;
+        background-color: white;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .search-bar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            bottom: 0px;
+        }
+
+      .search-input {
+        width: 80%;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+      }
+
+      .mic-icon {
+        position: absolute;
+        right: 15px;
+        color: #888;
+        font-size: 18px;
+        cursor: pointer;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <p id="p1">&leftarrow;</p>
+        <img
+          src="./WhatsApp Image 2025-01-06 at 10.43.08.jpeg"
+          alt=""
+          width="30px"
+        />
+        <p id="p2">Cutie &#9829;&#xFE0F;&#x1F61A;</p>
+        <!-- <p>&#128250;</p>
+            <p>&#128222;</p>  -->
+        <img src="./what img 2.jpeg" alt="" width="100px" id="i2" />
+      </header>
+
+      <section class="sec">
+        <div class="date">25 January</div>
+        <p class="left">Hyy mawa</p>
+        <p class="right">Hlo mawa</p>
+        <p class="left">whats going on</p>
+        <p class="right">edho ala</p>
+        <p class="left">inkenti mari sangathulu</p>
+        <p class="right">cheppali mawa nuvve</p>
+        <div class="date">26 January 2025</div>
+        <p class="left" style="width:40%">Are sai gadu pakka class pillani set chesad anta</p>
+        <p class="right">Avuna</p>
+        <p class="left">ah</p>
+        <p class="right">Atagade &#128568;</p>
+        <div class="date">27 January 2025</div>
+        <p class="left">Avunu mawa &#128514;</p>
+        <p class="right">Sai Antarra babu&#128539;</p>
+        <p class="left">&#128514; &#128514; </p>
+        <p class="right">Raja raja</p>
+        <p class="left">pulihoraja&#128514;
+        </p>
+        <p class="right" style="width: 40%;">Rey andaru mingle aipoyar mawa&#128580;
+        </p>
+        <div class="date">28 January </div>
+        <p class="left">Adhe ga &#128580;
+        </p>
+        <p class="right"> last ki Ah Teja gadu kuda &#128564;
+        </p>
+        <p class="left" style="width: 40%;">rey vadiki monnane breakup aindi kadara&#128580;
+        </p>
+        <p class="right">avunu&#128514; &#128514;
+
+        </p>
+        <div class="date">29 January </div>
+        <p class="left">mari &#128531;
+        </p>
+        <p class="right" style="width: 40%;">vadiki entha tym ra inko pillani set cheyadaniki &#128514;
+        </p>
+        <p class="left">nijame ra babu &#128514;</p>
+        <p class="right">haa &#128514;&#128514;</p>
+        <p class="left" style="width:40%">Arey vadiki enni stories unnay ra aslu&#128514;</p>
+        <p class="right" style="width:40%"> 1 kadu 2 kadu 3 &#128514;&#128514;</p>
+        <div class="date">30 January </div>
+        <p class="left">&#128514;&#128514;ha</p>
+        <p class="right">haha</p>
+        <p class="left">atagallu &#128514;</p>
+        <p class="right">Hehe &#128293;&#128514;
+        </p>
+        <div class="date">31 January </div>
+        <p class="left">Inkenti mari</p>
+        <p class="right">cheppali mawa</p>
+        <p class="left" style="width:40%">teja gadi birthday vasthundi </p>
+        <p class="right">haa topi pettude vadiki</p>
+        <p class="left">&#128514;&#128514;</p>
+        
+        <div class="date">1 Feb </div>
+        <p class="right" style="width:40%">Ekkadiki plan veddam mari &#128512;
+        </p>
+        <p class="left" style="width:40%">birlu pondiyadame ika  &#127866; &#127866;</p>
+        <p class="right"> &#128514;&127866;</p>
+        <p class="left" style="width:40%">Thgudham &127866;&127866; </p>
+        <p class="right" style="width:40%">Thagi ugudham &#127866;&#127866;</p>
+        <div class="date">2  Feb </div>
+        <p class="left" style="width:40%">rey e tym ki podam ra</p>
+        <p class="right">9 ki</p>
+        <p class="left" style="width:40%">Thondaraga randi ra wines close chestar</p>
+        <p class="right">ha osthunnam</p>
+        
+        <div class="date">3 feb </div>
+        <p class="left">cake &#127850; ?</p>
+        <p class="right"> Avasaramantava</p>
+        <p class="left">&#128514;&#128514;</p>
+       <p class="right" style="width:40%">sarle 100 rs thiskupodam lera &#128514;</p>
+        <div class="date">4 feb </div>
+        <p class="left" style="width:40%">rey na pods kanipistalev ra</p>
+        <p class="right">ekkada pettinav </p>
+        <p class="left" style="width:40%">ninna thagetapudu teja gadi room  lo</p>
+        <p class="right" style="width:40%">nik soi kuda led kada</p>
+     
+        <div class="date">5 Feb </div>
+        <p class="left" style="width:40%">dorikithe iyyandi ra</p>
+        <p class="right" style="width:40%">edunnay thagubothu edhava</p>
+        <p class="left">iyyandraa</p>
+        <p class="right">rep ochi thisko
+        </p>
+     
+        <div class="date">6 feb </div>
+        <p class="left">ha sare</p>
+        <p class="right">ha dhorikinaya</p>
+        <p class="left">ha sare</p>
+        <p class="right">ha ok malla</p>
+     
+     
+        /* <!-- <footer>
+          <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Message" />
+    
+            <i class="fas fa-microphone mic-icon"></i> 
+          </div>
+        </footer> --> */
+        <footer>
+            <div class="search">
+                <i class="fa-solid fa-note-sticky"></i>
+                <input type="text" class="search-input" placeholder="Message">
+               
+                    <i class="bi bi-paperclip"></i>
+                    <i class="bi bi-currency-rupee"></i>
+                    <i class="bi bi-camera"></i>
+                    
+                </div>
+
+                
+            </div>
+        </footer>
+    </section>
+    </div>
+  </body>
+</html>
